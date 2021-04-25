@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://www.w3schools.com/w3css/img_avatar3.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Account</b></h4>
+    <p class="w3-text-grey">John Doe</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i></a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>MicroBiz</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-white">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i><a href = "minority.html">Minority-Owned</a></button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-heart w3-margin-right"></i><a href = "female.html">Female-Owned</a></button>
+      <button class="w3-button w3-black w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i><a href = "art.html">Art</a></button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+   
+    <div class="w3-third w3-container w3-margin-bottom">
+        <img src="https://i.pinimg.com/280x280_RS/5c/b9/59/5cb95906f0c07c2e6328011108081fa0.jpg" alt="Alabasta" style="width:100%" class="w3-Hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b><a href = "https://www.emilymelissaphoto.com/">Emily Melissa Photo</a></b></p>
+          <p>As a portrait, event, and wedding photographer, I have been so honored is to be present for a vast number of love stories. Whether it’d be a romantic love, love between parents and their children, or celebrating the love of oneself. It is truly a privilege that is never lost on me. 
+              <br> 1741 West 99th Street Chicago, Illinois, 60613 <br>
+          Beauty Salon, Minority-Owned, Female-Owned</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img src="https://d7hftxdivxxvm.cloudfront.net/?resize_to=fit&width=381&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FmelhzyxFp13XTQqDyNbjhg%2Flarge.jpg" https alt="Kaye" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b><a href = "http://kayeofficial.com">Kaye</a></b></p>
+          <p>http://kayeofficial.com <br>
+          Musical Artist, Minority</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container">
+        <img src="https://cdn.shopify.com/s/files/1/0326/8362/2535/files/cs-large-logo-no-background_2_200x.png?v=1581365687" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b><a href = "https://www.coastalsociety.us">Coastal Society Botique</a></b></p>
+          <p>West Coast Inspired Carefully Curated Boutique, specializing in items for Her. Him & Home. Includes a wine bar for entertainment.<br> 139 North Oak Park Avenue, Oak Park IL</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+        <img src="https://static1.squarespace.com/static/5f31ae4cf911c65f2f1d806a/t/5f5a5f07c315762e4e955159/1618016491538/?format=1500w" alt="flourish" style="width:100%" class="w3-Hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b><a href = "https://www.andflourish.com/">&FLOURISH</a></b></p>
+          <p>Jennifer is the CEO and Founder of &Flourish where she helps survivors of abuse to get rid of your emotional baggage once and for all so you can live out your dreams!<br>Chicago, IL 60304 <br>
+          Flower Shop, Female-Owned</p>
+        </div>
+      </div>`
+  </div>
+    
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Us</b></h4>
+    <p> MicroBiz is a website that promotes small businesses during this unprecedented time. Small businesses have been impacted as much as result of the recent COVID-19 pandemic, but many comapnies have been struggling for years, and this pandemic just exacerbates the problem. The most common reasons small businesses fail include a lack of capital or funding, retaining an inadequate management team, a faulty infrastructure or business model, and unsuccessful marketing initiatives. Through this website, we hope to draw attention to these small business and support their economic needs.
+
+    </p>
+    <hr>
+    
+    <h4>Businesses Represented</h4>
+    <!-- Progress bars / Skills -->
+    <p>Minority-Owned</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:50%">50%</div>
+    </div>
+    <p>Female-Owned</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:50%">50%</div>
+    </div>
+    <p>Artists</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:33%">33%</div>
+    </div>
+    <hr>
+    
+    <h4>Businesses of the Day</h4>
+    <!-- Pricing Tables -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32"><a href = "http://www.liquidfusioncafe.com">Liquid Fusion</a></li>
+          <li class="w3-padding-16">Minority-Owned</li>
+          <li class="w3-padding-16">Drinks</li>
+          <li class="w3-padding-16">Contemporary counter-serve cafe offering coffee drinks, tea, fresh fruit freezes, bubble tea & more.</li>
+          <li class="w3-padding-16">275 Parkway Dr, Lincolnshire, IL 60069</li>
+          <li class="w3-padding-16">
+            <h2>4.3<span class="fa fa-star checked"></span></h2>
+            <span class="w3-opacity">out of 5</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-teal w3-xlarge w3-padding-32"><a href="http://www.socalcomics.com">Southern California Comics </a></li>
+          <li class="w3-padding-16">Comic Store</li>
+          <li class="w3-padding-16">Online Shopping</li>
+          <li class="w3-padding-16">Huge shop filled with comics, graphic novels & magazines, plus action figures, trading cards & toys.</li>
+          <li class="w3-padding-16">8280 Clairemont Mesa Blvd #124, San Diego, CA 92111</li>
+          <li class="w3-padding-16">
+            <h2>4.7<span class="fa fa-star checked"></h2>
+            <span class="w3-opacity">out of 5</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32"><a href = "https://www.facebook.com/EZ-Pantry-275552822486862">EZ Pantry</a></li>
+          <li class="w3-padding-16">Convenience Store</li>
+          <li class="w3-padding-16">Minority Owned</li>
+          <li class="w3-padding-16">Has an endless amount of products and a homey environment.</li>
+          <li class="w3-padding-16">1304 S Milwaukee Ave, Vernon Hills, IL 60061</li>
+          <li class="w3-padding-16">
+            <h2>4.3<span class="fa fa-star checked"></h2>
+            <span class="w3-opacity">out of 5 stars</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Us</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>microbiz@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Buffalo Grove, US</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>1234567890</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>INFORMATION</h3>
+      <p>Micro Biz <br>
+      1 Stevenson Drive, Lincolnshire, IL 60069</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>The Creators</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+            <a href="https://www.instagram.com/yashnelavelli/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Yash Nelavelli</a>, <a href="https://www.instagram.com/shishirb7/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Shishir Bhatta</a>, <a href="https://www.instagram.com/atulamanchi.17/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Atul Amanchi</a>, <a href="https://www.instagram.com/atulamanchi.17/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Mehul Gautam</a>,
+            and Aditya Dalal
+    </li>
+      </ul>
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="qoom.io" title="W3.CSS" target="_blank" class="w3-hover-opacity">Qoom</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
